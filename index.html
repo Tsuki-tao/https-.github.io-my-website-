@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทเรียนออนไลน์ [คอมพิวเตอร์]</title>
+  <!-- ฟอนต์ Canva Sans -->
+  <link href="https://fonts.cdnfonts.com/css/canva-sans" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Canva Sans', sans-serif;
+      background-color: #D4D2F2;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4a47a3;
+    }
+
+    /* Banner */
+    .banner {
+      text-align: center;
+      padding: 50px 20px;
+      background: #eae8ff;
+    }
+    .banner h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .banner img {
+      max-width: 150px;
+      margin-bottom: 15px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+    }
+    .card button {
+      background: #4a47a3;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .card button:hover {
+      background: #37358a;
+    }
+
+    /* Footer */
+    footer {
+      background: #e0efff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">บทเรียนออนไลน์ [คอมพิวเตอร์]</div>
+    <nav>
+      <a href="#">หน้าแรก</a>
+      <a href="#">คำอธิบายรายวิชา</a>
+      <a href="#">ใบความรู้</a>
+      <a href="#">ใบกิจกรรม</a>
+      <a href="#">แบบทดสอบ</a>
+      <a href="#">สื่อวิดีทัศน์</a>
+      <a href="#">ผู้จัดทำ</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" alt="Technology Icon">
+    <h1>ยินดีต้อนรับสู่บทเรียนออนไลน์</h1>
+    <p>เรียนรู้การเขียนโค้ดและสร้างเว็บไซต์ไปพร้อมกัน!</p>
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1197/1197460.png" alt="Code Icon">
+      <h3>บทที่ 1 ภาษาโค้ด</h3>
+      <p>เรียนรู้พื้นฐานการทำงานของภาษาโค้ด</p>
+      <button>อ่านเพิ่มเติม</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/752/752326.png" alt="Programming Icon">
+      <h3>บทที่ 2 การเขียนโค้ด</h3>
+      <p>ฝึกการเขียนโปรแกรมอย่างเป็นระบบ</p>
+      <button>อ่านเพิ่มเติม</button>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Website Icon">
+      <h3>บทที่ 3 การสร้างเว็บไซต์</h3>
+      <p>สร้างเว็บไซต์ที่สวยงามและใช้งานได้จริง</p>
+      <button>อ่านเพิ่มเติม</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2025 | ติดต่อ: example@email.com</p>
+  </footer>
+
+</body>
+</html>
